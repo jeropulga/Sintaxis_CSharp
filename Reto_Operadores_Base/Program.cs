@@ -1,0 +1,14 @@
+Console.WriteLine("=== Reto base: cálculo de compra (adaptar al enunciado oficial) ===");
+decimal precioUnitario = 120000m;
+int cantidad = 3;
+decimal subtotal = precioUnitario * cantidad;
+decimal descuento = subtotal * 0.15m;
+decimal baseConDescuento = subtotal - descuento;
+decimal impuesto = baseConDescuento * 0.19m;
+decimal total = baseConDescuento + impuesto;
+Console.WriteLine($"Precio unitario: {precioUnitario:C0}");
+Console.WriteLine($"Cantidad: {cantidad}");
+Console.WriteLine($"Subtotal: {subtotal:C0}");
+Console.WriteLine($"Descuento (15 %): {descuento:C0}");
+Console.WriteLine($"Impuesto (19 %): {impuesto:C0}");
+Console.WriteLine($"Total de la compra: {total:C0}");

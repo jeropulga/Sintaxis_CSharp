@@ -1,0 +1,15 @@
+Console.WriteLine("=== Reto base: ficha de producto (adaptar al enunciado oficial) ===");
+string codigo = "TEC-101";
+string nombre = "Teclado inalámbrico";
+int unidades = 12;
+decimal precioUnitario = 79900m;
+bool disponible = unidades > 0;
+char categoria = 'A';
+decimal valorInventario = unidades * precioUnitario;
+Console.WriteLine($"Código: {codigo}");
+Console.WriteLine($"Producto: {nombre}");
+Console.WriteLine($"Categoría: {categoria}");
+Console.WriteLine($"Unidades: {unidades}");
+Console.WriteLine($"Precio unitario: {precioUnitario:C0}");
+Console.WriteLine($"Disponible: {disponible}");
+Console.WriteLine($"Valor total del inventario: {valorInventario:C0}");
